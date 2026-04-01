@@ -11,7 +11,9 @@
     "start": "node dist/main.js",
     "dev": "npx tsc && node dist/main.js",
     "test": "vitest --run",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "format:write": "prettier --write \"src/**/*.{js,ts,json,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,ts,json,css,md}\""
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -35,10 +37,6 @@
     "drizzle-orm": "^0.36.2",
     "express": "^4.21.1",
     "uuid": "^11.0.3"
-  },
-"Style": {
-    "format:write": "prettier --write \"src/**/*.{js,ts,json,css,md}\"",
-    "format:check": "prettier --check \"src/**/*.{js,ts,json,css,md}\""
+  }
 }
 
-}
