@@ -10,7 +10,8 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Check out code
+            - name: Check out coden
+            
               uses: actions/checkout@v4
 
             - name: Set up Node
